@@ -6,7 +6,10 @@ import express from 'express'
 const gateway = new ApolloGateway({
   serviceList: [
     { name: 'prisma', url: 'http://techinformiPrismaApi:4001/graphql' },
-    // { name: 'researchProjects', url: 'http://localhost:4002/graphql' },
+    {
+      name: 'researchProjects',
+      url: 'http://techinformiResearchProjectsApi:4002/graphql',
+    },
     // { name: 'pageContents', url: 'http://localhost:4003/graphql' }
   ],
 })
